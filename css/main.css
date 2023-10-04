@@ -23,15 +23,58 @@
 
 .b2 {
 	background-color: #9696ff;
-	/*orange*/
+	/*purple*/
 }
 
 .b3 {
 	background-color: #85e1f4;
-	/*green*/
+	/*cyan*/
 }
 
 .b4 {
 	background-color: #e89380;
-	/*purple*/
+	/*orange*/
+}
+
+/* *****************************************
+               TRANSITION
+********************************************/
+
+.transition .b1{
+	transition: width 1000ms ease-in-out;
+}
+
+.transition .b1:hover{
+	width: 400px;
+	height: 150px;
+}
+
+.transition .b2{
+	transition: width 1s, height .5s;
+	transition-delay: .5s;
+}
+
+.transition .b2:hover{
+	width: 250px;
+	height: 250px;
+}
+
+/* Timing function using Cubic-Bezier */
+
+.transition .b3{
+	transition: transform 2s cubic-bezier(.78,.16,.72,.82) .5s;
+}
+
+.transition .b3:hover{
+	transform: rotate(360deg);
+}
+
+.transition .b4{
+	transition: all 1s ease-in-out .3s;
+}
+
+.transition .b4:hover{
+	transform: rotate(360deg);
+	border-radius: 50%;
+	background-color: #9696ff;
 }
