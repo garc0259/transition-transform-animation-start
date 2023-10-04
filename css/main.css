@@ -78,3 +78,53 @@
 	border-radius: 50%;
 	background-color: #9696ff;
 }
+
+/* *******************************************
+		TRANSFORM
+***********************************************/
+
+.transform .box{
+	transition: transform .5s;
+}
+
+.transform .b1{
+	transform: rotate(60deg);
+	transform-origin: bottom right;
+}
+
+.transform .b1:hover{
+	transform: rotate(0deg);
+}
+
+.transform .b2:hover{
+	transform: translate(20px, 20px);
+}
+
+
+
+.transform .b3:hover{
+	transform: scale(1.5);
+
+}
+.transform .b3 {
+	transform-origin: top left;
+}
+
+/* .transform .b4{
+	transform: skew(30deg);
+}
+
+.transform .b4:hover{
+	transform: skewX(0);
+} */
+
+/******* Multiple transition *******/
+
+.transform .b4{
+	transform: skewX(30deg); translateX(30px);
+}
+.transform .b4:hover{
+	transform: skewX(0);
+
+
+	
